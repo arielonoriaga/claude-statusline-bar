@@ -38,6 +38,14 @@ Claude Pro/Max subscriptions get the `5h` and `7d` rate-limit segments. API-key-
 
 ## Install
 
+### With Claude Code
+
+Just ask Claude in any session — it'll handle the download and settings wiring for you. Copy this prompt:
+
+> Install `claude-statusline-bar` from https://github.com/arielonoriaga/claude-statusline-bar — download `statusline.sh` into `~/.claude/`, make it executable, and register it under `statusLine` in `~/.claude/settings.json` (merge with existing settings, don't replace). Then confirm by running the script against a synthetic JSON payload.
+
+Claude reads this README, fetches the script, patches your `settings.json`, and verifies. Restart Claude Code after it finishes.
+
 ### One-liner
 
 ```bash
