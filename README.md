@@ -38,19 +38,25 @@ Claude Pro/Max subscriptions get the `5h` and `7d` rate-limit segments. API-key-
 
 ## Install
 
-### With Claude Code
+### Quick install — copy & run
 
-Just ask Claude in any session — it'll handle the download and settings wiring for you. Copy this prompt:
-
-> Install `claude-statusline-bar` from https://github.com/arielonoriaga/claude-statusline-bar — download `statusline.sh` into `~/.claude/`, make it executable, and register it under `statusLine` in `~/.claude/settings.json` (merge with existing settings, don't replace). Then confirm by running the script against a synthetic JSON payload.
-
-Claude reads this README, fetches the script, patches your `settings.json`, and verifies. Restart Claude Code after it finishes.
-
-### One-liner
+Paste this into your terminal. It downloads the script, drops it in `~/.claude/`, and wires it into `settings.json`:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/arielonoriaga/claude-statusline-bar/main/install.sh | bash
 ```
+
+Then restart Claude Code. Done.
+
+> **What it does:** downloads `statusline.sh` to `~/.claude/statusline.sh`, makes it executable, and merges a `statusLine` entry into `~/.claude/settings.json` (preserving everything else). Requires `jq` and `curl`. Read [`install.sh`](install.sh) before running if you want to inspect it.
+
+### With Claude Code
+
+Prefer to have Claude do it? Paste this prompt in any session:
+
+> Install `claude-statusline-bar` from https://github.com/arielonoriaga/claude-statusline-bar — download `statusline.sh` into `~/.claude/`, make it executable, and register it under `statusLine` in `~/.claude/settings.json` (merge with existing settings, don't replace). Then confirm by running the script against a synthetic JSON payload.
+
+Claude reads this README, fetches the script, patches your `settings.json`, and verifies. Restart Claude Code after it finishes.
 
 ### Manual
 
