@@ -2,8 +2,10 @@
 
 A polished, information-dense status line for [Claude Code](https://docs.claude.com/en/docs/claude-code) — with logical grouping, ANSI styling, and zero dependencies beyond `bash`, `jq`, and `git`.
 
+![claude-statusline-bar screenshot](assets/screenshot.png)
+
 ```
-Sonnet 4.6 · ● xhigh  │  ctx 12% · tok 60k · 5h 35% 4h 23m · 7d 62% 3d  │  INSERT · bypass  │  .claude  main ✓
+Opus 4.7 (1M context) · ● xhigh  │  ctx 12% · tok 39k · 5h 100% 52m · 7d 35% 3d 19h  │  INSERT · bypass  │  .claude
 ```
 
 ## What it shows
@@ -76,10 +78,6 @@ The script reads two optional fields from your `settings.json`:
 | `skipDangerousModePermissionPrompt` | Adds `bypass` to the session-mode group when `true` |
 
 Custom config location? Set `CLAUDE_CONFIG_DIR` and the script will pick it up.
-
-## Screenshot
-
-*(Add a real screenshot here after first use.)*
 
 ## Customization
 
