@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Archived.** This repository is no longer maintained.
+
 # claude-statusline-bar
 
 A polished, information-dense status line for [Claude Code](https://docs.claude.com/en/docs/claude-code) — with logical grouping, ANSI styling, and zero dependencies beyond `bash`, `jq`, and `git`.
